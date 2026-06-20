@@ -6,10 +6,18 @@
 
 ```
 agents/
+
+├── _shared/           # Mandatory Agent Communication Contract
+├── XX-agent-name/     # Individual Agent Directories
+│   ├── agent.md       # Agent definition and rules
+│   └── skill.md       # Agent capabilities and output formats
+└── schemas/           # JSON schemas for all handoff packages
+=======
 ├── schemas/           # JSON schemas for all handoff packages
 ├── 00-creative-director.md
 ├── ...
 └── 10-launch.md
+
 
 governance/            # Policies for dependencies, security, and naming
 evaluators/            # Evaluation templates for agent outputs
@@ -30,6 +38,23 @@ scripts/               # Validation and auditing tools
 release/               # Checklists and changelog templates
 ```
 
+## Agent Pipeline
+
+1. **00-creative-director**: Vision and Strategy.
+2. **01-research**: Market Intelligence.
+3. **02-product**: IA and Feature Specs.
+4. **03-design**: Design Systems and Tokens.
+5. **04-content**: High-converting Copy and SEO.
+6. **05-github-supply-chain**: Security and Dependency Gatekeeper.
+7. **06-builder**: Implementation and Build Artifacts.
+8. **07-integration**: API and Service Connectivity.
+9. **08-qa**: Final Quality Gate and Validation.
+10. **09-email**: Lifecycle Communication Assets.
+11. **10-launch**: Marketplace Distribution and Release.
+
+## Critical Rules (Defined in `agents/_shared/agent-contract.md`)
+
+=======
 ## Critical Rules
 
 Every agent must follow these non-negotiable rules:

@@ -66,9 +66,7 @@ Critical security gate in `.github/workflows/` enforcing:
 
 ---
 
-Built with ❤️ by @Malphite10
-
-![Octocats High Five](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) 🙌 🐱
+Built with by @Malphite10
 
 - `agents/`: Agent specifications, skills, and the central registry.
 - `schemas/`: Global state and handoff definitions.
@@ -81,16 +79,3 @@ Built with ❤️ by @Malphite10
 Zero supply-chain incidents.
 100% Deterministic execution.
 Full audit traceability.
-
----Built wit
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░```░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░████  ████  █████  ██ ░░░  ██████  ██   ██ ██ ░░██████ ████████░░░░     
-░░██ ████ ██ ██   ██ ██ ░░░  ██   ██ ██   ██ ██ ░░  ██ ░░██░░ ░░ ░██ 
-░░██  ██  ██ ███████ ██ ░░░  ██████  ███████ ██ ░░  ██ ░░█████░░  ██ ██████
-░░██      ██ ██   ██ ██ ░░░  ██ ░░░  ██ ░ ██ ██ ░░  ██ ░░██░░ ░░  ██ ██  ██ 
-░░██░░░░  ██ ██░░ ██ ███████ ██ ░░░  ██ ░░██ ██ ░░  ██ ░░███████░░██ ██████
-'''░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░

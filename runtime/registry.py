@@ -1,5 +1,7 @@
 import json
 import os
+from typing import Dict, Any, Optional
+
 from typing import Dict, Any
 
 class AgentRegistry:
@@ -15,6 +17,8 @@ class AgentRegistry:
 
     def get_agent_info(self, agent_id: str) -> Dict[str, Any]:
         return self.registry.get(agent_id, {})
+
+    def get_next_agents(self, current_agent: str) -> Optional[list]:
 
     def get_next_agent(self, current_agent: str) -> str:
         return self.get_agent_info(current_agent).get("next")

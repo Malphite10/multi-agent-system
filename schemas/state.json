@@ -4,6 +4,15 @@
   "type": "object",
   "properties": {
     "project_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "workflow_id": { "type": "string" },
+    "started_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "current_stage": { "type": "string" },
+    "current_agent": { "type": "string" },
+    "next_agent": { "type": ["string", "null"] },
+    "status": { "type": "string" },
+=======
     "current_stage": { "type": "string" },
     "completed_stages": {
       "type": "array",
@@ -20,6 +29,22 @@
     "scores": {
       "type": "object",
       "additionalProperties": { "type": "number" }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "history": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "required": [
+    "project_id", "run_id", "workflow_id", "started_at", "updated_at",
+    "current_stage", "current_agent", "status", "completed_stages",
+    "artifacts", "errors", "scores", "metrics", "history"
+  ]
+=======
     }
   },
   "required": ["project_id", "current_stage", "completed_stages", "artifacts", "errors", "scores"]

@@ -24,6 +24,8 @@ git clone https://github.com/@Malphite10/multi-agent-system.git
 cd multi-agent-system
 npm install
 PYTHONPATH=. python3 runtime/orchestrator.py --dry-run
+=======
+PYTHONPATH=. python3 runtime/orchestrator.py
 ```
 
 ## Core Components
@@ -36,6 +38,17 @@ The `runtime/` engine manages execution flow and artifact generation.
 - `registry.py`: Loads agent metadata.
 
 ### Supply Chain Gatekeeper
+=======
+### 1. Runtime State Machine
+The `runtime/` engine manages the execution flow, state transitions, and artifact generation.
+- `orchestrator.py`: Coordinates the multi-agent workflow.
+- `state.py`: Manages global state persistence.
+- `graph.py`: Defines the execution sequence.
+
+### 2. Deterministic Handoffs
+Every agent communicates via structured JSON packages validated against strict schemas in `agents/schemas/`.
+
+### 3. Supply Chain Gatekeeper
 Critical security gate in `.github/workflows/` enforcing:
 - ✅ Dependency license scans
 - ✅ SBOM generation (CycloneDX)
@@ -56,3 +69,28 @@ Critical security gate in `.github/workflows/` enforcing:
 Built with ❤️ by @Malphite10
 
 ![Octocats High Five](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) 🙌 🐱
+
+- `agents/`: Agent specifications, skills, and the central registry.
+- `schemas/`: Global state and handoff definitions.
+- `artifacts/`: Structured store for current runs, snapshots, and archives.
+- `design-system/`: Registry and design tokens.
+- `memory/`: Knowledge graph and marketplace intelligence.
+
+## Success Metrics
+
+Zero supply-chain incidents.
+100% Deterministic execution.
+Full audit traceability.
+
+---Built wit
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░```░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░████  ████  █████  ██ ░░░  ██████  ██   ██ ██ ░░██████ ████████░░░░     
+░░██ ████ ██ ██   ██ ██ ░░░  ██   ██ ██   ██ ██ ░░  ██ ░░██░░ ░░ ░██ 
+░░██  ██  ██ ███████ ██ ░░░  ██████  ███████ ██ ░░  ██ ░░█████░░  ██ ██████
+░░██      ██ ██   ██ ██ ░░░  ██ ░░░  ██ ░ ██ ██ ░░  ██ ░░██░░ ░░  ██ ██  ██ 
+░░██░░░░  ██ ██░░ ██ ███████ ██ ░░░  ██ ░░██ ██ ░░  ██ ░░███████░░██ ██████
+'''░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
